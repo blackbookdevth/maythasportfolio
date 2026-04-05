@@ -1,5 +1,9 @@
 :{$PORT:3000}
 
-root * .
+root * /app
 file_server
 encode gzip
+log {
+    output stdout
+    format console
+}
